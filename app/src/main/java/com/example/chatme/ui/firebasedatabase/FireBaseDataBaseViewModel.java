@@ -380,7 +380,7 @@ public class FireBaseDataBaseViewModel extends ViewModel {
     }
     //Get Messages Of Chat From Firebase
     public void getMessagesOfChatFromFirebase(String myId, String userId){
-        fireBaseDataBaseRepo.getFireBaseDataBase().child("Chats").child(myId).child("chats").child(userId).child("messageModel").addListenerForSingleValueEvent(new ValueEventListener() {
+        fireBaseDataBaseRepo.getFireBaseDataBase().child("Chats").child(myId).child("chats").child(userId).child("messageModel").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 ArrayList<MessageModel2> messageModelArrayList = new ArrayList<>();
@@ -388,8 +388,6 @@ public class FireBaseDataBaseViewModel extends ViewModel {
                     messageModelArrayList.add(dataSnapshot.getValue(MessageModel2.class));
                 }
                 Log.d(TAG, "onDataChangeeee: " + myId + " ++ " + userId);
-                setMessagesReadToUser(myId,userId);
-                setUserMessagesReadToMe(myId,userId);
                 mutableLiveDataChatMessagesArrayList.setValue(messageModelArrayList);
             }
 

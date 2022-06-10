@@ -158,6 +158,8 @@ public class ChatMessagesActivity extends AppCompatActivity {
                 imageUri =null;
                 binding.ChatActivityEditTextMessage.setText("");
                 binding.ChatActivityShowImage.setImageResource(0);
+                fireBaseDataBaseViewModel.setMessagesReadToUser(myContactModel.getId(),contactModel.getId());
+                fireBaseDataBaseViewModel.setUserMessagesReadToMe(myContactModel.getId(),contactModel.getId());
                 isMessageSent = true;
             }
         });
@@ -255,6 +257,8 @@ public class ChatMessagesActivity extends AppCompatActivity {
         fireBaseDataBaseViewModel.getMutableLiveDataChatMessagesArrayList().observe(this, new Observer<ArrayList<MessageModel2>>() {
             @Override
             public void onChanged(ArrayList<MessageModel2> messageModels) {
+                fireBaseDataBaseViewModel.setMessagesReadToUser(myContactModel.getId(),contactModel.getId());
+                fireBaseDataBaseViewModel.setUserMessagesReadToMe(myContactModel.getId(),contactModel.getId());
                 if (messageModels.size() != 0) {
                     if (pos != -1) {
                         Log.d(TAG, "onChanged: " + chatItemModelArrayList.size());
@@ -351,7 +355,7 @@ public class ChatMessagesActivity extends AppCompatActivity {
        //fireBaseMessagingViewModel.sendMessageNotification(contactModel.getToken(),message);
        //new FCMMessages().sendMessageSingle( contactModel.getId(), "Chat Me", message, null);
        myApiViewModel.sendNotification(new RootModel(contactModel.getToken(),new NotificationModel(myContactModel.getNum(),message),new DataModel("youssef Ahmed" , "23")));//Send Notification To User
-       fireBaseDataBaseViewModel.getMessagesOfChatFromFirebase(myContactModel.getId(),contactModel.getId()); //Get Messages
+       //fireBaseDataBaseViewModel.getMessagesOfChatFromFirebase(myContactModel.getId(),contactModel.getId()); //Get Messages
     }
 
     private void arrangeChatsByCount() {
