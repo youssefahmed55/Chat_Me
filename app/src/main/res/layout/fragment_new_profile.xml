@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/NewProfile_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_35sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/NewProfile_profileImage"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_person_24" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/NewProfile_nickname"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/NewProfile_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:hint="@string/write_nickname"
+        android:background="@drawable/shape1"
+        android:paddingStart="@dimen/_10sdp"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/NewProfile_nextButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/next"
+        android:backgroundTint="@color/green"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

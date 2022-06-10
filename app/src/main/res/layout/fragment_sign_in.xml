@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:paddingTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="@string/verify_your_phone_number"
+        android:textSize="@dimen/_20ssp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        >
+    </TextView>
+
+    <TextView
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chatme_will_send_an_sms_message_carrier_charges_may_apply_to_verify_your_phone_number_n_t_enter_your_phone_number"
+        android:textSize="@dimen/_11ssp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        >
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_7sdp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
+            <Spinner
+                android:id="@+id/Sign_Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:padding="@dimen/_4sdp"
+
+
+                />
+            <TextView
+                android:id="@+id/Sign_edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="center"
+
+                android:maxLines="1"
+                android:text="20"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/shape1"
+                android:layout_marginEnd="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/Sign_edittext2"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="@string/enter_your_number_here"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="bottom"
+            android:maxLines="1"
+            android:maxLength="13"
+            android:textSize="@dimen/_10ssp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="@drawable/shape1"
+            android:paddingStart="@dimen/_10sdp"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Sign_nextButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/next"
+        android:backgroundTint="@color/green"
+        android:layout_gravity="center" />
+
+</LinearLayout>
