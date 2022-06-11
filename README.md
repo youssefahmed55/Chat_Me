@@ -151,14 +151,6 @@ implementation "androidx.core:core:1.8.0"
 implementation 'com.google.code.gson:gson:2.8.9'
 ```
 
-## How can Hospital staff start using the application
-
-- After creating the accounts through the HR's employee, The hospital staff can log in to the application with their email and password in the first interface of the application .
-
-
-![splash](https://user-images.githubusercontent.com/99625111/169163751-aa0a5bb2-1320-4550-92a1-7f162a87cf0e.png)
-![login](https://user-images.githubusercontent.com/99625111/169163724-882315fc-6ac3-4203-ad41-c91ffce450e4.png)
-
 
 ## Screenshots explain of Chat Me application
 
