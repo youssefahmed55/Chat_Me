@@ -110,7 +110,7 @@ implementation 'com.google.firebase:firebase-analytics'
 implementation 'com.google.firebase:firebase-auth'
 ```
     
-- Firebase DataBase
+- Firebase RealTime DataBase
 
 ```css
 implementation 'com.google.firebase:firebase-database'
