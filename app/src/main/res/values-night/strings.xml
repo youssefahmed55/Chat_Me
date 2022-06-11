@@ -22,7 +22,7 @@
     <string name="Contacts">Contacts</string>
     <string name="profile">Profile</string>
     <string name="search">Search</string>
-    <string name="logout">Logout &amp; Exit</string>
+    <string name="logout">Logout</string>
     <string name="status">Status</string>
     <string name="nick_name">Nick Name</string>
     <string name="Status_Saved">Status Saved</string>
