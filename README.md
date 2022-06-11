@@ -209,7 +209,7 @@ implementation 'com.google.code.gson:gson:2.8.9'
 ![11](https://user-images.githubusercontent.com/99625111/173170051-bacfe903-4ede-4e6e-a354-56ff276e2c1a.jpg)
 
 
-- Show Notification Message To You If you Send Message To You (It Can Work In Background/foreground And While Using App)
+- Show Notification Message To You If User Send Message To You (It Can Work In Background/foreground And While Using App)
 
 ![6](https://user-images.githubusercontent.com/99625111/173170143-132d0634-9865-4d36-987f-ff7487c212d8.png)
 
