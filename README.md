@@ -184,7 +184,7 @@ implementation 'com.google.code.gson:gson:2.8.9'
 ![9](https://user-images.githubusercontent.com/99625111/173169891-cd56789b-8a7c-4c0f-adf1-588caf1855fe.jpg)
 
 
-- Show Contacts That In Server And not 
+- Show Contacts That In Server And not , You Can Send Sms To Contacts That Not use This App Before
 
 ![10](https://user-images.githubusercontent.com/99625111/173169938-c392a795-d67a-41bb-aea7-049d3e03750c.jpg)
 
