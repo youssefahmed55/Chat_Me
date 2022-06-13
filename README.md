@@ -1,6 +1,6 @@
 # Chat_Me
 
-**This Application is a chat application to communicate between friends who are on contacts via chat and send pictures to them .**
+**This is a chat application to communicate with friends who are in contact via chat and send pictures to them.**
 
 ![chat me logo](https://user-images.githubusercontent.com/99625111/173168729-f88f6cab-942e-4d1f-8cf9-a681c79fffac.PNG)
 
